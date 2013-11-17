@@ -1,0 +1,25 @@
+body {
+	FONT-SIZE: 14px; 
+	COLOR: blue; 
+	FONT-FAMILY: arial, helvetica, verdana, sans-serif; 
+	
+}
+
+.button
+{
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 14px; 
+	COLOR: red; 
+	background-color:Yellow;
+	FONT-FAMILY: arial, helvetica, verdana, sans-serif; 
+	TEXT-DECORATION: none
+}
+
+.label
+{
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 11px; 
+	COLOR: black; 
+	FONT-FAMILY: arial, helvetica, verdana, sans-serif; 
+	TEXT-DECORATION: none
+}

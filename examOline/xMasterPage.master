@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="xMasterPage.master.cs" Inherits="xMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+            <table style="width: 800px; height: 135px">
+                <tr>
+                    <td style="width: 227px">
+                    </td>
+                    <td style="width: 405px">
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 227px">
+                    </td>
+                    <td style="width: 405px">
+                        <span style="font-size: 24pt">&nbsp; &nbsp; &nbsp;&nbsp; <span style="font-family: 宋体">
+                            <strong>课程在线考试系统</strong></span> </span>&nbsp;
+                    </td>
+                    <td>
+                        设计者：Song</td>
+                </tr>
+                <tr>
+                    <td style="width: 227px">
+                    </td>
+                    <td style="width: 405px">
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        <asp:contentplaceholder id="topPageContent" runat="server">
+            内容部分
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

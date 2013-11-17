@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ZhuaQu">
+  <DataContextMoniker Name="/ZhuaQuDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f0cd9b1b-5a09-4bf4-a5bb-2f819281ee72" absoluteBounds="1.5, 1.125, 2, 1.5715458170572916">
+      <DataClassMoniker Name="/ZhuaQuDataContext/MsgInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b34ba134-5eb2-4b8e-86dd-c2c3790d54ad" absoluteBounds="1.5150000000000001, 1.585, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

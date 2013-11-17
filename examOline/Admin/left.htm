@@ -1,0 +1,255 @@
+﻿<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
+<html><head>
+
+<STYLE type="text/css">
+BODY {
+	MARGIN: 0px; FONT: 9pt 宋体
+}
+TABLE {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+TD {
+	FONT: 14px 宋体
+}
+IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; VERTICAL-ALIGN: bottom; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+A {
+	FONT: 14px 宋体; COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #215dc6
+}
+.sec_menu {
+	BORDER-RIGHT: #158BB7 1px solid; BACKGROUND: #ffffff; OVERFLOW: hidden; BORDER-LEFT:#158BB7 1px solid; BORDER-BOTTOM:#158BB7 1px solid
+}
+.list_title {
+	
+}
+.list_title SPAN {
+	FONT-WEIGHT: bold;
+	LEFT: 8px;
+	COLOR:#FFFFFF;
+	POSITION: relative;
+	TOP: 2px;
+	visibility: visible;
+}
+.list_title2 {
+	
+}
+.list_title2 SPAN {
+	FONT-WEIGHT: bold; LEFT: 8px; COLOR: #ffffff; POSITION: relative; TOP: 2px
+}
+</STYLE>
+<SCRIPT language="javascript">
+function show(obj,maxg,obj2)
+{
+  if(obj.style.pixelHeight<maxg)
+  {
+    obj.style.pixelHeight+=maxg/10;
+	obj.filters.alpha.opacity+=20;
+	obj2.background="Img/back_11.gif";
+    if(obj.style.pixelHeight==maxg/10)
+	  obj.style.display='block';
+	myObj=obj;
+	mymaxg=maxg;
+	myObj2=obj2;
+	setTimeout('show(myObj,mymaxg,myObj2)','5');
+  }
+}
+function hide(obj,maxg,obj2)
+{
+  if(obj.style.pixelHeight>0)
+  {
+    if(obj.style.pixelHeight==maxg/5)
+	  obj.style.display='none';
+    obj.style.pixelHeight-=maxg/5;
+	obj.filters.alpha.opacity-=10;
+	obj2.background="Img/back_08.gif";
+	myObj=obj;
+	mymaxg=maxg
+	myObj2=obj2;
+	setTimeout('hide(myObj,mymaxg,myObj2)','5');
+  }
+  else    if(whichContinue)
+	  whichContinue.click();
+}
+function chang(obj,maxg,obj2)
+{
+  if(obj.style.pixelHeight)
+  {
+    hide(obj,maxg,obj2);
+	nopen='';
+	whichcontinue='';
+  }
+  else    if(nopen)
+	{
+	  whichContinue=obj2;
+      nopen.click();
+	}
+	else
+	{
+	  show(obj,maxg,obj2);
+	  nopen=obj2;
+	  whichContinue='';
+	}
+}
+</SCRIPT>
+
+
+</head>
+<body leftmargin="0" topmargin="0" >
+<TABLE cellSpacing="0" cellPadding="0" width="100%" align=left border=0> 
+<TBODY>
+  <TR>
+    <TD vAlign="top">
+      <TABLE cellSpacing="0" cellPadding="0" width="210" align="center">
+        <TBODY>
+       　　 <TR style="CURSOR: hand">
+        　　</TR>
+        </TBODY>
+      </TABLE>
+        
+        
+       <SCRIPT language="javascript">
+　　　　　　var nopen="";
+ 　　　　　 var whichContinue='';
+      </SCRIPT>
+
+        <table align="center" background="Img/back_left_06.gif" border="0" cellpadding="0"  cellspacing="0" height="682" width="230">
+            <tr>
+                <td colspan="3" height="50">&nbsp;
+              </td>
+            </tr>
+            <tr>
+                <td height="390" width="10">&nbsp;
+                </td>
+                <td valign="top" style="width: 210px">
+                
+                
+
+
+                
+                    <TABLE cellSpacing=0 cellPadding=0 align=center style="width: 210px">
+                       <TBODY>
+                            <TR style="CURSOR: hand">
+                                <TD class=list_title id=list1 onmouseover="this.typename='list_title2';" onclick=chang(menu1,160,list1); 
+                                      onmouseout="this.typename='list_title';" background="Img/back_08.gif" height=35>
+                                    <span style="color: #ffffff"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;学生管理</SPAN> </span>
+                                </TD>
+                            </TR>
+                            <TR>
+                                <TD align="center" valign="middle"> 
+                                  <DIV class="sec_menu" id="menu1" style="DISPLAY: none; FILTER: alpha(Opacity=0); WIDTH: 210px; HEIGHT: 0px">
+                                    <TABLE  cellSpacing="0" cellPadding="0" width="210" align="center">
+                                      <TBODY>
+                                        <TR> 
+                                          <TD height=30 align="left">&nbsp;&nbsp;&nbsp;&nbsp;<a href="studentAdd.aspx" target="menu">□ 添加学生信息</a></TD>
+                                        </TR>           
+                                        <TR> 
+                                          <TD height=30 align="left">&nbsp;&nbsp;&nbsp;&nbsp;<a href="stuInfoView.aspx" target="menu">□ 管理学生信息</a></TD>
+                                        </TR>           
+                                      </TBODY>
+                                    </TABLE>
+                                  </DIV>
+                                  </TD>
+                                  </TR>
+                           </TBODY>
+                       </TABLE>
+
+
+
+
+
+
+                    <!--以下代码用于生成左文件的一块选择菜单-->
+                    <TABLE cellSpacing=0 cellPadding=0 align=center style="width: 210px">
+                       <TBODY>
+                            <TR style="CURSOR: hand">
+                                <TD class="list_title" id="list2" onmouseover="this.typename='list_title2';" onclick=chang(menu2,160,list2); 
+                                      onmouseout="this.typename='list_title';" background="Img/back_08.gif" height=35>
+                                    <span style="color: #ffffff"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;教师管理</SPAN> </span>
+                                </TD>
+                            </TR>
+                            <TR>
+                                <TD align="center" valign="middle"> 
+                                  <DIV class="sec_menu" id="menu2" style="DISPLAY: none; FILTER: alpha(Opacity=0); WIDTH: 210px; HEIGHT: 0px">
+                                    <TABLE  cellSpacing="0" cellPadding="0" width="210" align="center">
+                                      <TBODY>
+                                        <TR> 
+                                          <TD height=30 align="left">&nbsp;&nbsp;&nbsp;&nbsp;<a href="teacherAdd.aspx" target="menu">□ 添加教师信息</a></TD>
+                                        </TR> 
+                                        <TR> 
+                                          <TD height=30 align="left">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Addprofessional.aspx" target="menu">□ 添加专业</a></TD>
+                                        </TR>          
+                                        <TR> 
+                                          <TD height=30 align="left">&nbsp;&nbsp;&nbsp;&nbsp;<a href="teacherInfoView.aspx" target="menu">□ 管理老师信息</a></TD>
+                                        </TR>           
+                                      </TBODY>
+                                    </TABLE>
+                                  </DIV>
+                                  </TD>
+                                  </TR>
+                           </TBODY>
+                       </TABLE>
+                     <!--以上为一个选择菜单模块-->
+
+ 
+                     <!--以下代码用于生成左文件的一块选择菜单-->
+                    <TABLE cellSpacing=0 cellPadding=0 align=center style="width: 210px">
+                       <TBODY>
+                            <TR style="CURSOR: hand">
+                                <TD class=list_title id=list3 onmouseover="this.typename='list_title2';" onclick=chang(menu3,160,list3); 
+                                      onmouseout="this.typename='list_title';" background="Img/back_08.gif" height=35>
+                                    <span style="color: #ffffff"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;管理员管理</SPAN> </span>
+                                </TD>
+                            </TR>
+                            <TR>
+                                <TD align="center" valign="middle"> 
+                                  <DIV class=sec_menu id=menu3 style="DISPLAY: none; FILTER: alpha(Opacity=0); WIDTH: 210px; HEIGHT: 0px">
+                                    <TABLE  cellSpacing=0 cellPadding=0 width=210 align=center>
+                                      <TBODY>
+                                      <TR> 
+                                          <TD height=30 align="left">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Addclass.aspx" target="menu">□ 添加班级</a></TD>
+                                        </TR>
+                                        <TR> 
+                                          <TD height=30 align="left">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Adddepartment.aspx" target="menu">□ 添加系别</a></TD>
+                                        </TR>
+                                        
+                                        <TR> 
+                                          <TD height=30 align="left">&nbsp;&nbsp;&nbsp;&nbsp;<a href="adminresult.aspx" target="menu">□ 查询成绩</a></TD>
+                                        </TR>    
+                                        <TR> 
+                                          <TD height=30 align="left">&nbsp;&nbsp;&nbsp;&nbsp;<a href="AddAdminInfo.aspx" target="menu">□ 添加管理员信息</a></TD>
+                                        </TR>           
+                                        <TR> 
+                                          <TD align="left"  height=30 >&nbsp;&nbsp;&nbsp;&nbsp;<a href="AdminInfo.aspx" target="menu">□ 管理管理员信息</a></TD>
+                                        </TR>           
+                                      </TBODY>
+                                    </TABLE>
+                                  </DIV>
+                                  </TD>
+                              </TR>
+                           </TBODY>
+                       </TABLE>
+                       <!--以上为一个选择菜单模块-->
+                       
+                       
+                       
+                        
+              </td>
+            </tr>
+        </table><TABLE cellSpacing=0 cellPadding=0 width=210 align=center>
+       　　 <TR style="CURSOR: hand">
+        　　</TR>
+            </TBODY><TBODY></TABLE>
+        
+        
+       <SCRIPT language=javascript>
+　　　　　　var nopen="";
+ 　　　　　 var whichContinue='';
+      </SCRIPT>
+
+    </TD></TR> </TBODY></TABLE>
+</body>   
+</html>
