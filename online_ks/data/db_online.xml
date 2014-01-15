@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mysql xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<name name="db_online">
+<name name="tb_admin">
+	<row><Id>1</Id><name>root</name><pwd>root</pwd></row>
+</name>
+<name name="tb_kt">
+	<row><Id>1</Id><kt_lb>测试</kt_lb><kt_lx>0</kt_lx><kt_small_lb>第一套题</kt_small_lb><kt_id>kt_01</kt_id><kt_nr>单选测试</kt_nr><kt_fs>10</kt_fs><kt_daan>A.a*B.b</kt_daan><kt_zqdaan>A.a</kt_zqdaan></row>
+	<row><Id>2</Id><kt_lb>测试</kt_lb><kt_lx>1</kt_lx><kt_small_lb>第一套题</kt_small_lb><kt_id>kt_11</kt_id><kt_nr>多选测试</kt_nr><kt_fs>10</kt_fs><kt_daan>A.a*B.b</kt_daan><kt_zqdaan>A.a*B.b</kt_zqdaan></row>
+	<row><Id>3</Id><kt_lb>测试</kt_lb><kt_lx>2</kt_lx><kt_small_lb>第一套题</kt_small_lb><kt_id>kt_21</kt_id><kt_nr>简答测试</kt_nr><kt_fs>10</kt_fs><kt_daan></kt_daan><kt_zqdaan>A.a</kt_zqdaan></row>
+	<row><Id>4</Id><kt_lb>测试</kt_lb><kt_lx>3</kt_lx><kt_small_lb>第一套题</kt_small_lb><kt_id>kt_31</kt_id><kt_nr>论述测试</kt_nr><kt_fs>10</kt_fs><kt_daan></kt_daan><kt_zqdaan>A.a</kt_zqdaan></row>
+	<row><Id>5</Id><kt_lb>测试</kt_lb><kt_lx>0</kt_lx><kt_small_lb>第一套题</kt_small_lb><kt_id>kt_02</kt_id><kt_nr>测试1</kt_nr><kt_fs>10</kt_fs><kt_daan>A.测试1*B.测试2</kt_daan><kt_zqdaan>A.测试1</kt_zqdaan></row>
+	<row><Id>6</Id><kt_lb>测试</kt_lb><kt_lx>0</kt_lx><kt_small_lb>第一套题</kt_small_lb><kt_id>kt_03</kt_id><kt_nr>测试3</kt_nr><kt_fs>10</kt_fs><kt_daan>A.测试1*B.测试2</kt_daan><kt_zqdaan>B.测试2</kt_zqdaan></row>
+	<row><Id>7</Id><kt_lb>测试</kt_lb><kt_lx>2</kt_lx><kt_small_lb>第一套题</kt_small_lb><kt_id>kt_22</kt_id><kt_nr>简单测试2</kt_nr><kt_fs>10</kt_fs><kt_daan></kt_daan><kt_zqdaan>撒的撒打算</kt_zqdaan></row>
+	<row><Id>53</Id><kt_lb>测试</kt_lb><kt_lx>2</kt_lx><kt_small_lb>第一套题</kt_small_lb><kt_id>kt_23</kt_id><kt_nr>简答测试4</kt_nr><kt_fs>10</kt_fs><kt_daan></kt_daan><kt_zqdaan>按时打算打算的大神</kt_zqdaan></row>
+</name>
+<name name="tb_ktlb">
+	<row><Id>5</Id><ktlb>测试2</ktlb></row>
+	<row><Id>6</Id><ktlb>测试</ktlb></row>
+	<row><Id>8</Id><ktlb>1</ktlb></row>
+	<row><Id>9</Id><ktlb>a</ktlb></row>
+	<row><Id>10</Id><ktlb>A</ktlb></row>
+	<row><Id>13</Id><ktlb>啊</ktlb></row>
+</name>
+<name name="tb_user">
+	<row><Id>19</Id><user>范志俊</user><pass>1234</pass><tel>021-63730691</tel><address>上海</address><number>2012021039</number></row>
+</name>
+<name name="tb_user_grade">
+	<row><Id>4</Id><number>2012021039</number><examsubject>测试</examsubject><grade>40</grade><datetime>2014-01-12 22:32:33</datetime></row>
+</name>
+</name>
+</mysql>

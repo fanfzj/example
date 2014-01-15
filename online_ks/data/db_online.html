@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>db_online</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="date" content="Sun, 12 Jan 2014 22:53:10 +0800">
+	<meta name="generator" content="MySQL-Front 5.3  (Build 4.43)">
+	<style type="text/css"><!--
+		body {font-family: Arial,Helvetica,sans-serif; font-size: 11px;}
+		h1 {font-size: 17px; text-decoration: bold;}
+		h2 {font-size: 15px; text-decoration: bold;}
+		h3 {font-size: 13px; text-decoration: bold;}
+		th,
+		td {font-size: 11px; border-color: #000000; border-style: solid; border-width: 1px; padding: 1px; font-weight: normal;}
+		code {font-size: 11px;}
+		.TableObject {border-collapse: collapse; border-color: #000000; font-family: Microsoft Sans Serif}
+		.TableData {border-collapse: collapse; border-color: #000000; font-family: Microsoft Sans Serif}
+		.TableHeader {border-color: #000000; text-decoration: bold; background-color: #e0e0e0;}
+		.StructureHeader {padding-left: 5px; text-align: left; border-color: #000000; text-decoration: bold;}
+		.Structure {text-align: left; border-color: #aaaaaa;}
+		.odd {}
+		.even {}
+		.DataHeader {padding-left: 5px; text-align: left; border-color: #000000; background-color: #e0e0e0;}
+		.Null {color: #999999;}
+		.PrimaryKey {font-weight: bold;}
+		.RightAlign {text-align: right;}
+	--></style>
+</head>
+<body>
+<h1 class="DatabaseTitle">数据库: db_online</h1>
+<h2>表格: tb_admin</h2>
+<p>备注: 管理员表</p>
+<h3>索引:</h3>
+<table border="0" cellspacing="0" summary="tb_admin" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>名称</th><th>类型</th><th>属性</th><th>备注</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">主索引</td><td>Id</td><td>unique</td><td></td></tr>
+</table><br>
+<h3>字段:</h3>
+<table border="0" cellspacing="0" summary="tb_admin" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>名称</th><th>类型</th><th>空</th><th>默认值</th><th>属性</th><th>备注</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">Id</td><td>int(11)</td><td>否</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>name</td><td>varchar(50)</td><td>否</td><td></td><td>&nbsp;</td><td>用户名</td>	</tr>
+	<tr class="Structure"><td>pwd</td><td>varchar(50)</td><td>否</td><td></td><td>&nbsp;</td><td>密码</td>	</tr>
+</table><br>
+<h3>数据:</h3>
+<table border="0" cellspacing="0" summary="tb_admin" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">Id</th><th class="DataHeader">name</th><th class="DataHeader">pwd</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">1</th><td class="">root</td><td class="">root</td></tr>
+</table><br style="page-break-after: always">
+<h2>表格: tb_kt</h2>
+<p>备注: 考题</p>
+<h3>索引:</h3>
+<table border="0" cellspacing="0" summary="tb_kt" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>名称</th><th>类型</th><th>属性</th><th>备注</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">主索引</td><td>Id</td><td>unique</td><td></td></tr>
+</table><br>
+<h3>字段:</h3>
+<table border="0" cellspacing="0" summary="tb_kt" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>名称</th><th>类型</th><th>空</th><th>默认值</th><th>属性</th><th>备注</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">Id</td><td>int(11)</td><td>否</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>kt_lb</td><td>varchar(100)</td><td>否</td><td></td><td>&nbsp;</td><td>试卷</td>	</tr>
+	<tr class="Structure"><td>kt_lx</td><td>int(11)</td><td>否</td><td>0</td><td>&nbsp;</td><td>类型</td>	</tr>
+	<tr class="Structure"><td>kt_small_lb</td><td>varchar(255)</td><td>否</td><td></td><td>&nbsp;</td><td>套题</td>	</tr>
+	<tr class="Structure"><td>kt_id</td><td>varchar(20)</td><td>否</td><td>kt_</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>kt_nr</td><td>varchar(255)</td><td>否</td><td></td><td>&nbsp;</td><td>内容</td>	</tr>
+	<tr class="Structure"><td>kt_fs</td><td>int(11)</td><td>否</td><td>10</td><td>&nbsp;</td><td>分数</td>	</tr>
+	<tr class="Structure"><td>kt_daan</td><td>varchar(255)</td><td>是</td><td></td><td>&nbsp;</td><td>答案</td>	</tr>
+	<tr class="Structure"><td>kt_zqdaan</td><td>varchar(255)</td><td>否</td><td></td><td>&nbsp;</td><td>正确答案</td>	</tr>
+</table><br>
+<h3>数据:</h3>
+<table border="0" cellspacing="0" summary="tb_kt" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">Id</th><th class="DataHeader">kt_lb</th><th class="DataHeader">kt_lx</th><th class="DataHeader">kt_small_lb</th><th class="DataHeader">kt_id</th><th class="DataHeader">kt_nr</th><th class="DataHeader">kt_fs</th><th class="DataHeader">kt_daan</th><th class="DataHeader">kt_zqdaan</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">1</th><td class="">测试</td><td class="RightAlign">0</td><td class="">第一套题</td><td class="">kt_01</td><td class="">单选测试</td><td class="RightAlign">10</td><td class="">A.a*B.b</td><td class="">A.a</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">2</th><td class="">测试</td><td class="RightAlign">1</td><td class="">第一套题</td><td class="">kt_11</td><td class="">多选测试</td><td class="RightAlign">10</td><td class="">A.a*B.b</td><td class="">A.a*B.b</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">3</th><td class="">测试</td><td class="RightAlign">2</td><td class="">第一套题</td><td class="">kt_21</td><td class="">简答测试</td><td class="RightAlign">10</td><td class="">&nbsp;</td><td class="">A.a</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">4</th><td class="">测试</td><td class="RightAlign">3</td><td class="">第一套题</td><td class="">kt_31</td><td class="">论述测试</td><td class="RightAlign">10</td><td class="">&nbsp;</td><td class="">A.a</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">5</th><td class="">测试</td><td class="RightAlign">0</td><td class="">第一套题</td><td class="">kt_02</td><td class="">测试1</td><td class="RightAlign">10</td><td class="">A.测试1*B.测试2</td><td class="">A.测试1</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">6</th><td class="">测试</td><td class="RightAlign">0</td><td class="">第一套题</td><td class="">kt_03</td><td class="">测试3</td><td class="RightAlign">10</td><td class="">A.测试1*B.测试2</td><td class="">B.测试2</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">7</th><td class="">测试</td><td class="RightAlign">2</td><td class="">第一套题</td><td class="">kt_22</td><td class="">简单测试2</td><td class="RightAlign">10</td><td class="">&nbsp;</td><td class="">撒的撒打算</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">53</th><td class="">测试</td><td class="RightAlign">2</td><td class="">第一套题</td><td class="">kt_23</td><td class="">简答测试4</td><td class="RightAlign">10</td><td class="">&nbsp;</td><td class="">按时打算打算的大神</td></tr>
+</table><br style="page-break-after: always">
+<h2>表格: tb_ktlb</h2>
+<p>备注: 考题列表</p>
+<h3>索引:</h3>
+<table border="0" cellspacing="0" summary="tb_ktlb" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>名称</th><th>类型</th><th>属性</th><th>备注</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">主索引</td><td>Id</td><td>unique</td><td></td></tr>
+</table><br>
+<h3>字段:</h3>
+<table border="0" cellspacing="0" summary="tb_ktlb" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>名称</th><th>类型</th><th>空</th><th>默认值</th><th>属性</th><th>备注</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">Id</td><td>int(11)</td><td>否</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>ktlb</td><td>varchar(50)</td><td>否</td><td></td><td>&nbsp;</td><td>考题列表</td>	</tr>
+</table><br>
+<h3>数据:</h3>
+<table border="0" cellspacing="0" summary="tb_ktlb" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">Id</th><th class="DataHeader">ktlb</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">5</th><td class="">测试2</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">6</th><td class="">测试</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">8</th><td class="">1</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">9</th><td class="">a</td></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">10</th><td class="">A</td></tr>
+	<tr class="Data even"><th class="PrimaryKey RightAlign">13</th><td class="">啊</td></tr>
+</table><br style="page-break-after: always">
+<h2>表格: tb_user</h2>
+<p>备注: 考生信息表</p>
+<h3>索引:</h3>
+<table border="0" cellspacing="0" summary="tb_user" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>名称</th><th>类型</th><th>属性</th><th>备注</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">主索引</td><td>Id</td><td>unique</td><td></td></tr>
+</table><br>
+<h3>字段:</h3>
+<table border="0" cellspacing="0" summary="tb_user" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>名称</th><th>类型</th><th>空</th><th>默认值</th><th>属性</th><th>备注</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">Id</td><td>int(11)</td><td>否</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>user</td><td>varchar(100)</td><td>否</td><td></td><td>&nbsp;</td><td>姓名</td>	</tr>
+	<tr class="Structure"><td>pass</td><td>varchar(50)</td><td>否</td><td></td><td>&nbsp;</td><td>密码</td>	</tr>
+	<tr class="Structure"><td>tel</td><td>varchar(13)</td><td>否</td><td>0</td><td>&nbsp;</td><td>电话号吗</td>	</tr>
+	<tr class="Structure"><td>address</td><td>varchar(200)</td><td>否</td><td></td><td>&nbsp;</td><td>地址</td>	</tr>
+	<tr class="Structure"><td>number</td><td>varchar(10)</td><td>否</td><td></td><td>&nbsp;</td><td>准考证号</td>	</tr>
+</table><br>
+<h3>数据:</h3>
+<table border="0" cellspacing="0" summary="tb_user" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">Id</th><th class="DataHeader">user</th><th class="DataHeader">pass</th><th class="DataHeader">tel</th><th class="DataHeader">address</th><th class="DataHeader">number</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">19</th><td class="">范志俊</td><td class="">1234</td><td class="">021-63730691</td><td class="">上海</td><td class="">2012021039</td></tr>
+</table><br style="page-break-after: always">
+<h2>表格: tb_user_grade</h2>
+<h3>索引:</h3>
+<table border="0" cellspacing="0" summary="tb_user_grade" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>名称</th><th>类型</th><th>属性</th><th>备注</th></tr>
+	<tr class="Structure"><td  class="PrimaryKey">主索引</td><td>Id</td><td>unique</td><td></td></tr>
+</table><br>
+<h3>字段:</h3>
+<table border="0" cellspacing="0" summary="tb_user_grade" class="TableObject">
+	<tr class="TableHeader StructureHeader"><th>名称</th><th>类型</th><th>空</th><th>默认值</th><th>属性</th><th>备注</th></tr>
+	<tr class="Structure"><td class="PrimaryKey">Id</td><td>int(11)</td><td>否</td><td>&lt;auto_increment&gt;</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>
+	<tr class="Structure"><td>number</td><td>int(11)</td><td>否</td><td>0</td><td>&nbsp;</td><td>准考证号</td>	</tr>
+	<tr class="Structure"><td>examsubject</td><td>varchar(100)</td><td>否</td><td></td><td>&nbsp;</td><td>科目</td>	</tr>
+	<tr class="Structure"><td>grade</td><td>int(11)</td><td>否</td><td>0</td><td>&nbsp;</td><td>分数</td>	</tr>
+	<tr class="Structure"><td>datetime</td><td>datetime</td><td>是</td><td class="Null">&lt;空&gt;</td><td>&nbsp;</td><td>考试时间</td>	</tr>
+</table><br>
+<h3>数据:</h3>
+<table border="0" cellspacing="0" summary="tb_user_grade" class="TableData">
+	<tr class="TableHeader"><th class="DataHeader PrimaryKey">Id</th><th class="DataHeader">number</th><th class="DataHeader">examsubject</th><th class="DataHeader">grade</th><th class="DataHeader">datetime</th></tr>
+	<tr class="Data odd"><th class="PrimaryKey RightAlign">4</th><td class="RightAlign">2012021039</td><td class="">测试</td><td class="RightAlign">40</td><td class="">2014-01-12 22:32:33</td></tr>
+</table><br style="page-break-after: always">
+</body>
+</html>
